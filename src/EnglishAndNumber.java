@@ -17,9 +17,7 @@ public class EnglishAndNumber {
         map.put("nine", "9");
 
         for (Map.Entry<String, String> entry : map.entrySet()) {
-            if (s.contains(entry.getKey())) {
-                s = s.replaceAll(entry.getKey(), entry.getValue());
-            }
+            s = s.replaceAll(entry.getKey(), entry.getValue());
         }
         return Integer.parseInt(s);
     }

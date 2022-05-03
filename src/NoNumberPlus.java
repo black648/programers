@@ -14,10 +14,6 @@ public class NoNumberPlus {
 
     }
 
-    public static boolean matched (int i, int[] numbers) {
-        return Arrays.stream(numbers).noneMatch(j -> j == i);
-    }
-
     public static void main(String[] args) {
         NoNumberPlus noNumberPlus = new NoNumberPlus();
         System.out.println(noNumberPlus.solution(new int[] {1,2,3,4,6,7,8,0}));
